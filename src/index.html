@@ -113,8 +113,14 @@
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(4, 1fr);
             gap: 40px;
+        }
+
+        @media (max-width: 1024px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
 
         .service-card {
@@ -233,7 +239,7 @@
 
     <section class="hero" id="inicio">
         <img src="logo-white.png" style="width:40%">
-        <p>Projectos | Fiscalização | Gestão</p>
+        <p>Projectos | Revisão de Projecto | Fiscalização | Gestão</p>
     </section>
 
     <section class="services" id="servicos">
